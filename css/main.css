@@ -4,7 +4,6 @@ body {
   font-family: "DM Sans";
   font-size: 22px;
   color: #fff;
-  min-width: 1440px;
 }
 *,
 *:before,
@@ -22,8 +21,9 @@ ul {
 }
 /* CONTAINER */
 .container {
+  margin: 0px auto;
   padding: 0px 70px;
-  background-color: crimson;
+  max-width: 1440px;
 }
 
 /* HEADER */
@@ -43,7 +43,7 @@ ul {
 }
 .header__inner {
   margin: 0px auto;
-  width: 1440px;
+  max-width: 1440px;
   padding: 0px 50px 0px 50px;
   display: flex;
   justify-content: space-between;
@@ -68,11 +68,10 @@ ul {
 }
 
 /* MAIN */
-.main {
-  margin: 0px auto;
-  width: 1440px;
-}
+
 .main__intro {
+  margin: 0px auto;
+  max-width: 1440px;
   padding: 0px 20px;
   display: flex;
   flex-direction: row;
