@@ -69,25 +69,25 @@ ul {
 
 /* MAIN */
 
-.main__intro {
+.main__inner {
   margin: 0px auto;
   max-width: 1440px;
   padding: 0px 20px;
   display: flex;
   flex-direction: row;
 }
-.main__intro-first {
+.main__lines {
   padding-left: 24px;
   padding-top: 14px;
   position: absolute;
 }
 
-.main__intro-second {
+.main__inner-first {
   padding: 40px 50px 0px;
   display: flex;
   flex-direction: row;
 }
-.main__intro-third {
+.main__inner-second {
   font-size: 70px;
   line-height: 88px;
   letter-spacing: 3.2px;
@@ -97,7 +97,7 @@ ul {
   justify-content: space-between;
 }
 /* Streaming platform and icons */
-.platforms {
+.main__inner-platforms {
   font-size: 15px;
   line-height: 24px;
   letter-spacing: 0;
@@ -154,12 +154,10 @@ ul {
 }
 /* BUTTON */
 .btn {
-  display: inline-block;
-  vertical-align: top;
+  height: 51px;
+  padding: 0px 20px;
   background-color: #118da8;
   border-radius: 6px;
-  padding: 12px 20px;
-  text-decoration: none;
   font-size: 17px;
   color: #fff;
 }
@@ -176,24 +174,40 @@ ul {
 }
 .card__information {
   padding-left: 53px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .card__category {
-  display: inline-block;
   background-color: #191919;
+  color: #fff;
   border-radius: 6px;
-  padding: 0px 16px 0px 16px;
+  padding: 0px 16px;
   font-size: 18px;
-  vertical-align: top;
   margin-bottom: 48.44px;
+}
+.card__description {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .card__episode {
   font-size: 17px;
   color: #118da8;
-  margin-bottom: 18px;
 }
 .card__title {
   font-size: 64px;
   letter-spacing: 2.56px;
   line-height: 70.4px;
   font-weight: 400;
+  color: #fff;
+}
+/* TEXT */
+.text {
+  line-height: 33px;
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #000000;
 }

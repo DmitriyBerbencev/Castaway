@@ -26,21 +26,19 @@
     </header>
 
     <main class="main">
-      <section class="main__intro">
-        <div class="main__intro-first">
-          <img src="./img/lines.svg" alt="" class="main__lines lines" />
-        </div>
+      <section class="main__inner">
+        <img src="./img/lines.svg" alt="" class="main__lines" />
 
-        <div class="main__intro-second">
+        <div class="main__inner-first">
           <img src="./img/man.jpg" alt="Capture" class="main__image image" />
 
-          <div class="main__intro-third">
-            <div class="content">
+          <div class="main__inner-second">
+            <div class="main__inner-third">
               Take your podcast to the
               <a href="#" class="underline">next</a>
               <span class="higlight"> level</span>
             </div>
-            <div class="platforms">
+            <div class="main__inner-platforms">
               <ul class="icons">
                 <p class="label">Listen on</p>
                 <a href="https://open.spotify.com/" class="icons__link">
@@ -66,8 +64,8 @@
       <div class="container">
         <section class="main__episodes">
           <header class="header header_shifted">
-            <p class="header__title">Latest episodes</p>
-            <a href="#" class="btn">View all episodes</a>
+            <span class="header__title">Latest episodes</span>
+            <button class="btn">View all episodes</button>
           </header>
 
           <section class="main__card card">
@@ -78,15 +76,18 @@
                 class="image image_size_s"
               />
               <article class="card__information">
-                <div class="card__category">Gear</div>
-                <div class="card__episode">Episode 3</div>
-                <div class="card__text">
+                <button class="card__category">Gear</button>
+                <div class="card__description">
+                  <div class="card__episode">Episode 3</div>
                   <h1 class="card__title">
                     Should you get outboard audio gear?
                   </h1>
-                  Is hardware really worth it when it comes to podcasting? The
-                  answer is...it depends. Here’s our reasons on why you might
-                  want to consider picking something up.
+                  <p class="text">
+                    Is hardware really worth it when it comes to podcasting? The
+                    answer is...it depends. Here’s our reasons on why you might
+                    want to consider picking something up.
+                  </p>
+                  <button class="btn">View Episode Details</button>
                 </div>
               </article>
             </div>
@@ -95,14 +96,38 @@
           <section class="card">
             <div class="card__inner">
               <img src="./img/image2.jpg" alt="Capture" class="image_size_s" />
-              <article class="card__information"></article>
+              <article class="card__information">
+                <button class="card__category">Tips & Tricks</button>
+                <div class="card__description">
+                  <div class="card__episode">Episode 2</div>
+                  <h1 class="card__title">
+                    Mic tricks to take you to the next level
+                  </h1>
+                  <p class="text">
+                    Stop rolling with those default settings on your mic. These
+                    small tweaks will take you from sounding good to great.
+                  </p>
+                  <button class="btn">View Episode Details</button>
+                </div>
+              </article>
             </div>
           </section>
 
           <section class="card">
             <div class="card__inner">
               <img src="./img/image3.jpg" alt="Capture" class="image_size_s" />
-              <article class="card__information"></article>
+              <article class="card__information">
+                <button class="card__category">Gear</button>
+                <div class="card__description">
+                  <div class="card__episode">Episode 1</div>
+                  <h1 class="card__title">The best microphone under $200</h1>
+                  <p class="text">
+                    With so many microphones on the market, how are you supposed
+                    to know what’s the best? Take a look at our top picks.
+                  </p>
+                  <button class="btn">View Episode Details</button>
+                </div>
+              </article>
             </div>
           </section>
         </section>
