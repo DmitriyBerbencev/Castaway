@@ -91,28 +91,62 @@ ul {
   font-size: 70px;
   line-height: 88px;
   letter-spacing: 3.2px;
-  padding: 293px 60px 131.44px;
+  padding: 293px 60px 153.44px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+.main__episodes {
+  margin-bottom: 160px;
+}
+.main__mentor {
+  display: flex;
+  justify-content: space-between;
+}
 /* Streaming platform and icons */
 .main__inner-platforms {
+  height: 16%;
   font-size: 15px;
   line-height: 24px;
   letter-spacing: 0;
-  margin-bottom: 22px;
-  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-inline-start: 22px;
 }
 .icons {
-  padding: 0px;
+  width: 47%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0%;
+}
+.icons__item {
+  display: inline-block;
 }
 .icons__link {
-  margin-right: 17px;
-  text-decoration: none;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat round;
+  background-position: center;
+  background-size: contain;
 }
-.icons__link :last-of-type {
-  margin-right: o;
+
+.spotify {
+  background-image: url("/img/spotify.svg");
+}
+.pocketcasts {
+  background-image: url("/img/pocket_casts.svg");
+}
+.soundcloud {
+  background-image: url("/img/soundcloud.svg");
+}
+.applepodcast {
+  background-image: url("/img/applepodcast.svg");
+}
+.overcast {
+  background-image: url("/img/overcast.svg");
 }
 /* IMAGE */
 .image {
@@ -148,16 +182,15 @@ ul {
 .underline:hover::after {
   width: 100%;
 }
-/* LABEL: Listen on */
-.label {
-  padding-bottom: 16px;
-}
 /* BUTTON */
 .btn {
   height: 51px;
   padding: 0px 20px;
   background-color: #118da8;
   border-radius: 6px;
+  border: none;
+  outline: none;
+  font-family: "DM Sans";
   font-size: 17px;
   color: #fff;
 }
@@ -180,7 +213,10 @@ ul {
   justify-content: space-between;
 }
 .card__category {
+  font-family: "DM Sans";
   background-color: #191919;
+  border: none;
+  outline: none;
   color: #fff;
   border-radius: 6px;
   padding: 0px 16px;
@@ -210,4 +246,28 @@ ul {
   line-height: 33px;
   color: rgba(255, 255, 255, 0.7);
   border: 1px solid #000000;
+}
+/* CIRCLE */
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #118da8;
+  border-radius: 50%;
+  color: #fff;
+  height: 112px;
+  position: relative;
+  width: 112px;
+}
+.circle__icon {
+  fill: currentColor;
+  height: 63.4%;
+  position: absolute;
+  width: 34%;
+  background-image: url(/img/arrow_1.svg);
+  background-repeat: no-repeat;
+  transform: rotate(-90deg);
+}
+.circle__arrow {
+  transform: rotate(-90deg);
 }
