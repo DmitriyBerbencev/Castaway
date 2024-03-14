@@ -103,6 +103,18 @@ ul {
   display: flex;
   justify-content: space-between;
 }
+.main__mentor-information {
+  width: 45.38%;
+  display: flex;
+  align-items: center;
+}
+.main__mentor-description {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 /* Streaming platform and icons */
 .main__inner-platforms {
   height: 16%;
@@ -201,16 +213,16 @@ ul {
   margin-bottom: 60px;
 }
 .card__inner {
-  padding: 40.44px 40px 39.56px 40px;
+  padding: 3%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .card__information {
-  padding-left: 53px;
+  width: 63.77%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
 }
 .card__category {
   font-family: "DM Sans";
@@ -230,11 +242,13 @@ ul {
   align-items: flex-start;
   justify-content: space-between;
 }
-.card__episode {
+/* TRANSITION */
+.transition {
   font-size: 17px;
   color: #118da8;
 }
-.card__title {
+/* TITLE */
+.title {
   font-size: 64px;
   letter-spacing: 2.56px;
   line-height: 70.4px;
@@ -245,7 +259,6 @@ ul {
 .text {
   line-height: 33px;
   color: rgba(255, 255, 255, 0.7);
-  border: 1px solid #000000;
 }
 /* CIRCLE */
 .circle {
@@ -266,8 +279,5 @@ ul {
   width: 34%;
   background-image: url(/img/arrow_1.svg);
   background-repeat: no-repeat;
-  transform: rotate(-90deg);
-}
-.circle__arrow {
   transform: rotate(-90deg);
 }
